@@ -386,10 +386,27 @@
                 <hr>
                 <form action="#">
                     <h3>สนใจติดต่อกลับ</h3>
-			<input type="text" placeholder="ชื่อของคุณ" required>
-                    	<input type="tel" placeholder="เบอร์โทรศัพท์" required>
-                    	<textarea rows="4" placeholder="ข้อความที่ต้องการสอบถาม"></textarea>
-                    	<button type="submit" class="btn-submit">ส่งข้อมูลติดต่อ</button>
+			/* <input type="text" placeholder="ชื่อของคุณ" required> */
+                    	/* <input type="tel" placeholder="เบอร์โทรศัพท์" required> */
+                    	/* <textarea rows="4" placeholder="ข้อความที่ต้องการสอบถาม"></textarea> */
+                    	/* <button type="submit" class="btn-submit">ส่งข้อมูลติดต่อ</button> */
+
+			<form action="https://formspree.io/f/xwvwkanr">
+    				<div>
+       					<label>ชื่อของคุณ</label>
+        				<input type="text" name="name" required placeholder="ชื่อของคุณ">
+    				</div>
+    				<div>
+        				<label>เบอร์โทรศัพท์</label>
+        				<input type="tel" name="phone" required placeholder="เบอร์โทรศัพท์">
+    				</div>
+    				<div>
+        				<label>ข้อความที่ต้องการสอบถาม</label>
+        				<textarea name="message" required placeholder="ข้อความที่ต้องการสอบถาม"></textarea>
+    				</div>
+    					<button type="submit">ส่งข้อมูลติดต่อ</button>
+			</form>
+
             </div>
             <div class="map-wrapper">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1708.2807521599104!2d100.54758256108522!3d13.87095278647689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sth!2sth!4v1774501790080!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
